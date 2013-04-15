@@ -5,13 +5,10 @@
 # T *)
 
 let is_prime n =
-	let rec iterate i =
-		if ( i * i > n  )
-		then true
-		else
-			if ( ( n mod i ) = 0 )
-			then false
-			else iterate ( n + 1 )
+    if ( n < 2 ) then false else
+    let rec iterate i =
+        if ( i * i > n  ) then true else
+		if ( ( n mod i ) = 0 ) then false else iterate ( n + 1 )
 	in
 		iterate 2;;
 
