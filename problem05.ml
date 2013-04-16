@@ -18,7 +18,7 @@ let my_reverse_3 = List.fold_left (fun a x -> x::a) [];;
  *
  * This solution is tail-recursive.
  *)
-let reverse_4 l =
+let my_reverse_4 l =
     let rec rev l2 acc =
         match l2 with
             []  -> acc
